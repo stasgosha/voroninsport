@@ -1,0 +1,45 @@
+$colors: (
+	white: #fff,
+	text: $text-color,
+	dark: $text-dark,
+	light: $text-light,
+	accent: $accent,
+	primary: $primary,
+);
+
+// blue: $blue,
+// orange: $orange,
+// dark: $text-dark
+
+@each $i in $colors{
+	$color-key: nth($i, 1);
+	$color-value: nth($i, 2);
+
+	&.color-#{$color-key}{
+		color: $color-value !important;
+	}
+}
+
+.push{
+	position: relative;
+}
+
+.flex-center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media screen and (max-width: 991px){
+	.md-flex-center{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.flex-right{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}

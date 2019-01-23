@@ -1,0 +1,32 @@
+.logo{
+	display: flex;
+	cursor: pointer;
+	position: relative;
+	flex: none;
+
+	&:after{
+		content: '';
+		display: block;
+		width: calc(100% - 2px);
+		height: calc(100% - 2px);
+		position: absolute;
+		left: 0;
+		top: 0;
+		border: 1px solid transparent;
+		transition: all $t;
+	}
+
+	&:hover{
+		&:after{
+			border-color: $primary;
+		}
+	}
+
+	img{
+		display: block;
+		max-width: 100%;
+		height: auto;
+		transition: all $t;
+		max-height: 64px;
+	}
+}

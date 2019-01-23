@@ -1,0 +1,69 @@
+// Panel
+.panel{
+	overflow: hidden;
+	height: 100vh;
+	background: #333;
+	position: relative;
+	z-index: 1000;
+
+	.panel-inner{
+		padding: 30px 0;
+		height: 100vh;
+		overflow-y: auto;
+		overflow-x: hidden !important;
+	}
+
+	.panel-nav{
+		list-style: none;
+		width: 100%;
+		padding: 0 30px;
+
+		li{
+			margin-bottom: 10px;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+
+			a{
+				font-weight: bold;
+				text-transform: uppercase;
+				text-decoration: none;
+				color: #fff;
+				transition: all $t;
+				font-size: 16px;
+				line-height: 2;
+				display: block;
+
+				&:hover{
+					color: $primary;
+				}
+			}
+
+			&.current-menu-item{
+				a{
+					color: $primary;
+				}
+			}
+		}
+	}
+
+	.panel-content{
+		padding: 0 30px;
+		margin-top: 30px;
+	}
+
+	.panel-phone{
+		font-size: 20px;
+		line-height: 24px;
+		font-family: $second-font;
+		color: #fff;
+		cursor: pointer;
+		transition: all $t;
+		display: block;
+
+		&:hover{
+			color: $primary;
+		}
+	}
+}

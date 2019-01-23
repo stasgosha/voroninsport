@@ -1,0 +1,85 @@
+.btn{
+	display: inline-flex;
+	border: none;
+	transition: all $t;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+	align-items: center;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 24px;
+	border-radius: 23px;
+	background: transparent;
+	color: $primary;
+	justify-content: center;
+	align-items: center;
+	font-family: $second-font;
+	font-weight: 800;
+	padding: 10px 40px;
+	border: 1px solid $primary;
+	position: relative;
+	-webkit-appearance: none;
+	text-align: center;
+
+	&:hover{
+		background: $primary;
+		color: #fff;
+	}
+
+	[class^="icon-"], [class*=" icon-"]{
+		&:first-child{
+			margin-right: 13px;
+		}
+
+		&:last-child{
+			margin-left: 13px;
+		}
+	}
+
+	&.btn-gray{
+		border-color: #c3c5c5;
+		color: $text-color;
+		font-family: $main-font;
+		background: transparent;
+		font-weight: 400;
+
+		&:hover{
+			border-color: $primary;
+			color: $primary;
+		}
+	}
+
+	&.btn-white{
+		border-color: #fff;
+		color: #fff;
+		font-family: $main-font;
+		background: transparent;
+		font-weight: 400;
+
+		&:hover{
+			border-color: $primary;
+			color: $primary;
+		}
+	}
+
+	&.fullwidth{
+		width: 100%;
+	}
+
+	&.btn-wide{
+		min-width: 220px;
+	}
+
+	&.btn-superwide{
+		min-width: 250px;
+	}
+
+	@media screen and (max-width: 575px){
+		padding: 10px 30px;
+
+		&.xs-fullwidth{
+			width: 100%;
+		}
+	}
+}

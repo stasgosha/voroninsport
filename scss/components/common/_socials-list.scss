@@ -1,0 +1,39 @@
+.socials-list{
+	display: flex;
+	list-style: none;
+
+	li{
+		margin-right: 10px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+		a{
+			width: 40px;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 1px solid #fff;
+			transition: all $t;
+			border-radius: 50%;
+
+			&:hover{
+				border-color: $primary;
+			}
+		}
+	}
+
+	&.dark{
+		li{
+			a{
+				border-color: #f4f4f4;
+
+				&:hover{
+					border-color: $primary;
+				}
+			}
+		}
+	}
+}

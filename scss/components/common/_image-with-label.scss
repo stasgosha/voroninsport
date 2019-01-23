@@ -1,0 +1,38 @@
+.image-with-label{
+	position: relative;
+
+	> .image{
+		img{
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	> .label{
+		position: absolute;
+		left: 0;
+		top: 50px;
+		font-family: $hand-font;
+		font-size: 26px;
+		line-height: 30px;
+		color: $text-dark;
+
+		&.text-right{
+			left: auto;
+			right: 0;
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		> .label{
+			position: static;
+			margin-bottom: 20px;
+			text-align: center;
+
+			&.text-right{
+				text-align: center !important;
+			}
+		}
+	}
+}

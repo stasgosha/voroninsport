@@ -1,0 +1,58 @@
+.blockquote{
+	margin: 35px 0;
+	background: #fff;
+	box-shadow: 0 14px 40px rgba(#000, .09);;
+	padding: 15px 35px 15px 30px;
+	border-right: 3px solid $primary;
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: calc(100% + 30px);
+	margin-left: -30px;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+	&:first-child{
+		margin-top: 0;
+	}
+
+	&:before{
+		content: '';
+		display: block;
+		background: #fff;
+		clip-path: polygon(0 50%, 100% 100%, 100% 0);
+		width: 30px;
+		height: 100%;
+		position: absolute;
+		left: -29px;
+		top: 0;
+	}
+
+	.blockquote-content{
+		flex: auto;
+	}
+
+	.blockquote-image{
+		flex: none;
+		margin-left: 15px;
+		margin-top: -15px;
+		align-self: flex-start;
+
+		img{
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		width: 100%;
+		margin-left: 0;
+
+		&:before{
+			display: none;
+		}
+	}
+}

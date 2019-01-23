@@ -1,0 +1,58 @@
+.header{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 100;
+	padding: 30px 0;
+	transition: all $t;
+
+	&.sticky{
+		padding: 10px 0;
+		background: #111;
+		box-shadow: 0 0 1px rgba($primary, .1);
+
+		.logo{
+			img{
+				max-height: 44px;
+			}
+		}
+
+		.menu-opener{
+			// width: 44px;
+			height: 44px;
+		}
+	}
+
+	.header-inner{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.header-block{
+			display: flex;
+			align-items: center;
+		}
+
+		.logo{
+			margin-right: 40px;
+		}
+
+		.socials-list{
+			margin-right: 36px;
+		}
+	}
+
+	.header-phone{
+		font-size: 20px;
+		line-height: 24px;
+		font-family: $second-font;
+		color: #fff;
+		cursor: pointer;
+		transition: all $t;
+		display: block;
+
+		&:hover{
+			color: $primary;
+		}
+	}
+}

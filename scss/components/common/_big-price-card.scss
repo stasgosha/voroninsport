@@ -1,0 +1,123 @@
+.big-price-card{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 20px 10px;
+
+	.bpc-caption{
+		font-size: 22px;
+		line-height: 30px;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: $text-dark;
+		margin-bottom: 50px;
+		flex: none;
+	}
+
+	.bpc-prices-list{
+		flex: none;
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		margin-bottom: 30px;
+
+		> .item{
+			width: calc(50% - 11px);
+			flex: none;
+
+			&.fullwidth{
+				width: 100%;
+			}
+		}
+	}
+
+	.bpc-price-block{
+		width: 100%;
+		display: flex;
+		flex: none;
+		width: 100%;
+		border: 1px solid #e4e4e4;
+		position: relative;
+		padding: 25px 15px;
+		text-align: center;
+
+		.bpc-label{
+			font-size: 12px;
+			text-transform: uppercase;
+			line-height: 20px;
+			position: absolute;
+			left: 50%;
+			top: -10px;
+			transform: translateX(-50%);
+			padding: 0 15px;
+			white-space: nowrap;
+			background: #fff;
+
+			&.after{
+				top: auto;
+				bottom: -10px;
+			}
+		}
+
+		.bpc-price{
+			font-size: 20px;
+			line-height: 48px;
+			height: 48px;
+			width: 100%;
+			font-weight: 300;
+			color: $primary;
+
+			span{
+				font-size: 48px;
+
+				@media screen and (max-width: 575px){
+					font-size: 40px;
+				}
+			}
+		}
+	}
+
+	.bpc-content{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex: auto;
+
+		p{
+			flex: auto;
+		}
+
+		.btn,
+		a{
+			flex: none;
+		}
+
+		a{
+			margin-top: 25px;
+			font-size: 16px;
+			text-decoration: underline;
+			color: $text-color;
+
+			&:hover{
+				color: $primary;
+			}
+		}
+	}
+
+	@media screen and (max-width: 1199px){
+		.bpc-prices-list{
+			flex-wrap: wrap;
+
+			> .item{
+				width: 100%;
+				margin-bottom: 30px;
+
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
