@@ -19,6 +19,19 @@
 				flex: none;
 			}
 		}
+
+		@media screen and (max-width: 1199px){
+			flex-wrap: wrap;
+
+			> .page-header-block{
+				width: 100%;
+				margin-bottom: 30px;
+
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
 	}
 
 	.page-header-links{
@@ -34,6 +47,24 @@
 
 			a{
 				white-space: nowrap;
+			}
+		}
+
+		@media screen and (max-width: 575px){
+			flex-direction: column;
+
+			li{
+				margin-right: 0;
+				margin-bottom: 15px;
+				width: 100%;
+
+				&:last-child{
+					margin-bottom: 0;
+				}
+
+				a{
+					width: 100%;
+				}
 			}
 		}
 	}

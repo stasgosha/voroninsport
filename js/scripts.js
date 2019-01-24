@@ -97,6 +97,49 @@ $(document).ready(function(){
 		]
 	});
 
+	// Coachs Slider
+	var coachsSliderFlag = false;
+
+	function coachsSliderInit(){
+		if ( $(window).width() <= 991 && !coachsSliderFlag) {
+			$('.coachs-slider').slick({
+				infinite: true,
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				dots: true,
+				arrows: true,
+				responsive: [
+					{
+						breakpoint: 992,
+						settings: {
+							slidesToShow: 2
+						}
+					},
+					{
+						breakpoint: 586,
+						settings: {
+							slidesToShow: 1,
+							arrows: false
+						}
+					}
+				]
+			});
+
+			coachsSliderFlag = true;
+		} else if($(window).width() > 991 && coachsSliderFlag) {
+			$('.coachs-slider').slick('unslick');
+			coachsSliderFlag = false;
+		}
+	};
+
+	if ( $(window).width() <= 991 ){
+		coachsSliderInit();
+	}
+
+	$(window).resize(function(){
+		coachsSliderInit();
+	});
+
 	// Sticky Header
 	var isSticky = false;
 

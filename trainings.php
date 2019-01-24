@@ -176,7 +176,7 @@
 		<section class="who-we-are-section padding-top-no">
 			<div class="container">
 				<div class="row align-items-end flex-column-reverse flex-lg-row">
-					<div class="col-lg-6 margin-top-large lg-margin-top-no md-flex-center">
+					<div class="col-lg-6 margin-top-large lg-margin-top-no md-flex-center d-none d-lg-block">
 						<div class="image-with-label">
 							<div class="label">Лично подбирает <br>тренерский состав и <br>проводит занятия</div>
 							<div class="image">
@@ -189,6 +189,12 @@
 							<div class="number">02</div>
 							<div class="text">
 								<h3 class="tpg-h2">Дмитрий Воронин</h3>
+							</div>
+						</div>
+						<div class="image-with-label d-lg-none margin-bottom-big">
+							<div class="label">Лично подбирает <br>тренерский состав и <br>проводит занятия</div>
+							<div class="image">
+								<img src="img/section-images/voronin.png" alt="">
 							</div>
 						</div>
 						<div class="tpg-typography">
@@ -204,8 +210,8 @@
 						</blockquote>
 					</div>
 				</div>
-				<div class="cards-list columns-3 sm-columns-1 margin-top-huge">
-					<div class="item">
+				<div class="cards-list columns-3 coachs-slider slider-default-paddings slider-dark-arrows">
+					<div class="item slide">
 						<div class="white-card">
 							<div class="card-image fullwidth">
 								<img src="//placeimg.com/370/360/people?v=1" alt="">
@@ -216,7 +222,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="item">
+					<div class="item slide">
 						<div class="white-card">
 							<div class="card-image fullwidth">
 								<img src="//placeimg.com/370/360/people?v=2" alt="">
@@ -227,7 +233,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="item">
+					<div class="item slide">
 						<div class="white-card">
 							<div class="card-image fullwidth">
 								<img src="//placeimg.com/370/360/people?v=3" alt="">
@@ -312,26 +318,6 @@
 								<img src="img/section-images/training-approach.png" alt="">
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="add-lines margin-bottom-large">
-					<h3 class="tpg-h3">Дополнительные возможности</h3>
-				</div>
-				<div class="row">
-					<div class="col-md-4 margin-bottom-big md-margin-bottom-no">
-						<a href="#" class="tile" style="background-image: url(img/tiles/child-camp.jpg);">
-							<span class="tile-caption">Детский лагерь <br>дневной</span>
-						</a>
-					</div>
-					<div class="col-md-4 margin-bottom-big md-margin-bottom-no">
-						<a href="#" class="tile" style="background-image: url(img/tiles/preparation-for-competitions.jpg);">
-							<span class="tile-caption">Подготовка <br>к соревнованиям</span>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="#" class="tile" style="background-image: url(img/tiles/outdoor-training.jpg);">
-							<span class="tile-caption">Выездные <br>тренировки</span>
-						</a>
 					</div>
 				</div>
 			</div>

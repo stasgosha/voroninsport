@@ -31,7 +31,7 @@
 		<section class="who-we-are-section padding-top-no">
 			<div class="container">
 				<div class="row align-items-end flex-column-reverse flex-lg-row">
-					<div class="col-lg-6 margin-top-large lg-margin-top-no md-flex-center">
+					<div class="col-lg-6 margin-top-large lg-margin-top-no md-flex-center d-none d-lg-block">
 						<div class="image-with-label">
 							<div class="label">Лично подбирает <br>тренерский состав и <br>проводит занятия</div>
 							<div class="image">
@@ -43,6 +43,12 @@
 						<div class="numbered-caption">
 							<div class="text">
 								<h3 class="tpg-h2">Дмитрий Воронин</h3>
+							</div>
+						</div>
+						<div class="image-with-label d-lg-none margin-bottom-big">
+							<div class="label">Лично подбирает <br>тренерский состав и <br>проводит занятия</div>
+							<div class="image">
+								<img src="img/section-images/voronin.png" alt="">
 							</div>
 						</div>
 						<div class="tpg-typography">
@@ -62,8 +68,8 @@
 		</section>
 		<section class="coachs-section section-default-bottom-padding">
 			<div class="container">
-				<div class="cards-list columns-3 sm-columns-2 xs-columns-1">
-					<div class="item">
+				<div class="cards-list columns-3 coachs-slider slider-default-paddings slider-dark-arrows">
+					<div class="item slide">
 						<div class="white-card">
 							<div class="card-image fullwidth">
 								<img src="//placeimg.com/370/360/people?v=1" alt="">
@@ -74,7 +80,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="item">
+					<div class="item slide">
 						<div class="white-card">
 							<div class="card-image fullwidth">
 								<img src="//placeimg.com/370/360/people?v=2" alt="">
@@ -85,7 +91,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="item">
+					<div class="item slide">
 						<div class="white-card">
 							<div class="card-image fullwidth">
 								<img src="//placeimg.com/370/360/people?v=3" alt="">
@@ -96,7 +102,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="item">
+					<div class="item slide">
 						<div class="white-card">
 							<div class="card-image fullwidth">
 								<img src="//placeimg.com/370/360/people?v=4" alt="">
@@ -107,7 +113,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="item">
+					<div class="item slide">
 						<div class="white-card">
 							<div class="card-image fullwidth">
 								<img src="//placeimg.com/370/360/people?v=5" alt="">
@@ -118,7 +124,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="item">
+					<div class="item slide">
 						<div class="white-card">
 							<div class="card-image fullwidth">
 								<img src="//placeimg.com/370/360/people?v=6" alt="">

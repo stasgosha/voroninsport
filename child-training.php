@@ -152,7 +152,7 @@
 		<section class="who-we-are-section">
 			<div class="container">
 				<div class="row align-items-end flex-column-reverse flex-lg-row">
-					<div class="col-lg-6 margin-top-large lg-margin-top-no md-flex-center">
+					<div class="col-lg-6 margin-top-large lg-margin-top-no md-flex-center d-none d-lg-block">
 						<div class="image-with-label">
 							<div class="label">Лично подбирает <br>тренерский состав и <br>проводит занятия</div>
 							<div class="image">
@@ -167,8 +167,14 @@
 								<h3 class="tpg-h2">Тренерский штаб</h3>
 							</div>
 						</div>
+						<p class="tpg-body-2 text-uppercase margin-bottom-normal">Дмитрий воронин</p>
+						<div class="image-with-label d-lg-none margin-bottom-big">
+							<div class="label">Лично подбирает <br>тренерский состав и <br>проводит занятия</div>
+							<div class="image">
+								<img src="img/section-images/voronin.png" alt="">
+							</div>
+						</div>
 						<div class="tpg-typography">
-							<p class="tpg-body-2 text-uppercase">Дмитрий воронин</p>
 							<p>Проблема существования космологической сингулярности является одной из наиболее серьёзных проблем физической космологии. Дело в том, что никакие наши сведения о том, что произошло после Большого Взрыва, не могут дать нам никакой информации о том, что происходило до этого. <br>Попытки решения проблемы существования этой сингулярности идут в нескольких направлениях: во-первых, считается.</p>
 						</div>
 						<blockquote class="blockquote">
@@ -181,8 +187,8 @@
 						</blockquote>
 					</div>
 				</div>
-				<div class="cards-list columns-3 sm-columns-1 margin-top-huge">
-					<div class="item">
+				<div class="cards-list columns-3 coachs-slider slider-default-paddings slider-dark-arrows">
+					<div class="item slide">
 						<div class="white-card">
 							<div class="card-image fullwidth">
 								<img src="//placeimg.com/370/360/people?v=1" alt="">
@@ -193,7 +199,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="item">
+					<div class="item slide">
 						<div class="white-card">
 							<div class="card-image fullwidth">
 								<img src="//placeimg.com/370/360/people?v=2" alt="">
@@ -204,7 +210,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="item">
+					<div class="item slide">
 						<div class="white-card">
 							<div class="card-image fullwidth">
 								<img src="//placeimg.com/370/360/people?v=3" alt="">
